@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# easyStock: 경제 구조 기반 주식 시뮬레이터
 
-First, run the development server:
+이 프로젝트는 Next.js(TypeScript) 기반의 클린하고 현대적인 주식 시뮬레이터입니다.
+
+## 주요 특징
+
+- **거시경제 변수**: 금리, 물가, 환율, GDP 성장률이 매일 변화
+- **주식 3종**: TechAI(기술주), BankZone(금융주), EcoEnergy(에너지/소재주) — 각기 다른 민감도
+- **뉴스 헤드라인**: 경제 상황을 요약하며, 사용자가 직접 해석할 수 있도록 비직관적으로 생성
+- **UI**: Tailwind CSS 기반의 깔끔하고 현대적인 디자인
+- **입출력**: 파일 없이, 모든 동작은 웹 콘솔(UI)에서 처리
+- **외부 API 미사용**: 모든 로직은 클라이언트에서 동작
+
+## 실행 방법
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000) 접속
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+※ 본 시뮬레이터는 투자 조언을 제공하지 않으며, 모든 데이터는 가상입니다.
